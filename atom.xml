@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>umzhaa‘website</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://umzhaa.website/"/>
+  <updated>2019-12-13T07:08:25.731Z</updated>
+  <id>http://umzhaa.website/</id>
+  
+  <author>
+    <name>umzhaa</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&#39;第一篇博客文章&#39;</title>
+    <link href="http://umzhaa.website/2019/12/12/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
+    <id>http://umzhaa.website/2019/12/12/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
+    <published>2019-12-12T15:55:49.000Z</published>
+    <updated>2019-12-13T07:08:25.731Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于建blog的过程中和踩过的坑"><a href="#关于建blog的过程中和踩过的坑" class="headerlink" title="关于建blog的过程中和踩过的坑"></a>关于建blog的过程中和踩过的坑</h1><p><em>写在前面：一个电脑新手，这是我第一次写博客，参考的教程来自15级的一个学长，基本就是根据他建立的过程来操作的</em></p><p>主要步骤：  </p><ul><li><font face="微软雅黑" size=3>注册github账户，新开一个repository，设置git page<br>也可以租一个VPS，<del>但是免费的git page托管服务多好用啊</del></font></li><li><font face="微软雅黑" size=3>下载安装hexo，跟着教程来操作就OK了</font>  </li><li><font face="微软雅黑" size=3>可以再hexo设置自己喜欢的主题和插件</font></li><li><font face="微软雅黑" size=3>最后托管到github上面</font><blockquote><p><font face="微软雅黑" size=3>其实用这个的另一个原因是我想学一学markdown，之前有看过这个，感觉用起来还不错，语法也和html基本上差不多<del>关键是jupyter notebook也支持</del>(。・∀・)ノ</font></p></blockquote></li></ul><p>嘿嘿(～﹃～)~zZ，先写这么多，踩过的坑有点多，一时间写不完。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;关于建blog的过程中和踩过的坑&quot;&gt;&lt;a href=&quot;#关于建blog的过程中和踩过的坑&quot; class=&quot;headerlink&quot; title=&quot;关于建blog的过程中和踩过的坑&quot;&gt;&lt;/a&gt;关于建blog的过程中和踩过的坑&lt;/h1&gt;&lt;p&gt;&lt;em&gt;写在前面：一个电脑新
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
