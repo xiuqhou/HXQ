@@ -87,9 +87,9 @@ function activateLightMode(){
 <p>所以，选择特征值越大的特征向量，越能代表数据的原始特征。</p>
 </blockquote>
 <h3 id="计算步骤（并不是代码，简单表明一下计算步骤）："><a href="#计算步骤（并不是代码，简单表明一下计算步骤）：" class="headerlink" title="计算步骤（并不是代码，简单表明一下计算步骤）："></a>计算步骤（并不是代码，简单表明一下计算步骤）：</h3><ul>
-<li>样本均值化：$X^{‘}=X-\mu$</li>
-<li>计算协方差矩阵：$S=X^{‘}X^{‘T}$或者$S^{‘}=X^{‘T}X^{‘}$</li>
-<li>计算协方差矩阵的特征值和特征向量：$\lambda,V=eig(S^{‘})$或者 $\lambda,U=eig(S)$</li>
+<li>样本均值化：$X’=X-\mu$</li>
+<li>计算协方差矩阵：$S=X’X{‘^T}$或者$S’=X{‘^T}X’$</li>
+<li>计算协方差矩阵的特征值和特征向量：$\lambda,V=eig(S’)$或者 $\lambda,U=eig(S)$</li>
 <li>最后计算降维后的数据：<script type="math/tex">{Y_{m \times r}} = {X_{m \times n}}{V_{n \times r}}</script>或者${Y_{r \times n}} = {U^T}_{r \times m}{X_{m \times n}}$</li>
 </ul>
 <h2 id="奇异值分解，SVD，Singular-value-decomposition"><a href="#奇异值分解，SVD，Singular-value-decomposition" class="headerlink" title="奇异值分解，SVD，Singular value decomposition"></a>奇异值分解，SVD，Singular value decomposition</h2><h3 id="为什么要用奇异值分解？"><a href="#为什么要用奇异值分解？" class="headerlink" title="为什么要用奇异值分解？"></a>为什么要用奇异值分解？</h3><blockquote>
@@ -100,9 +100,9 @@ function activateLightMode(){
 <p>其实奇异值分解的原始计算方法还是利用特征值分解，具体方法如下：</p>
 <ul>
 <li>首先一个矩阵可以分解成这种形式：$X_{m\times n}=U_{m\times m}\Sigma_{m\times n} V^{T}_{n\times n}$（证明略）</li>
-<li>所以其协方差矩阵就是<script type="math/tex">X{X^{'}} = U{\Sigma _1}{V^T}V{\Sigma _1}^T{U^T} = U{\Sigma _1}{\Sigma _1}^T{U^T} = U\Sigma {U^T}</script>，这里加了下标的就是前面的那个$\Sigma $矩阵，没加下标的矩阵是另一个矩阵，以示区别。</li>
+<li>所以其协方差矩阵就是<script type="math/tex">X{X'} = U{\Sigma _1}{V^T}V{\Sigma _1}^T{U^T} = U{\Sigma _1}{\Sigma _1}^T{U^T} = U\Sigma {U^T}</script>，这里加了下标的就是前面的那个$\Sigma $矩阵，没加下标的矩阵是另一个矩阵，以示区别。</li>
 <li>所以$U$就是协方差矩阵$S$的特征向量构成的矩阵，当然$V$也是$S^{‘}$的特征向量构成的矩阵</li>
-<li>对$S$和$S^{‘}$进行特征值分解就可以得到$U$和$V$。</li>
+<li>对$S$和$S’$进行特征值分解就可以得到$U$和$V$。</li>
 <li>$\Sigma $是一个对角矩阵，主对角元素是奇异值，一般从大到小排列，我们只需要用得到的特征值这样<script type="math/tex">\sigma _i = \sqrt \lambda _i</script>就可以得到奇异值矩阵$\Sigma $</li>
 </ul>
 </blockquote>
