@@ -83,7 +83,7 @@ function activateLightMode(){
 <p>数据的方差计算公式：</p>
 <script type="math/tex; mode=display">\frac{1}{n - 1}\sum\limits_{i = 1}^n (U_i^T{X_i} - U_i^T\mu)^2  = \frac{1}{n - 1}\sum\limits_{i = 1}^n {U_i^T \cdot X'X{'^T} \cdot {U_i}}</script><p>其中的$S = X’{X’}^T$就是为$X’$的协方差矩阵，而$\mu$表示样本的平均值。</p>
 <p>注意其中$U$是正交矩阵，也就是<script type="math/tex">{U^T}U = I</script>，并且协方差矩阵的特征值和特征向量满足：</p>
-<p><script type="math/tex">S{U_i} = \lambda {U_i}</script>，也就是$U_i^TS{U_i}{\text{ = }}\lambda_i $，代入上面式子，方差计算最后的结果就是<script type="math/tex">\frac{1}NaN\sum\limits_{i = 1}^n {\lambda_i}</script>。</p>
+<p><script type="math/tex">S{U_i} = \lambda {U_i}</script>，也就是$U_i^TS{U_i}{\text{ = }}\lambda_i $，代入上面式子，方差计算最后的结果就是<script type="math/tex">\frac{1}{n - 1}\sum\limits_{i = 1}^n {\lambda_i}</script>。</p>
 <p>所以，选择特征值越大的特征向量，越能代表数据的原始特征。</p>
 </blockquote>
 <h3 id="计算步骤（并不是代码，简单表明一下计算步骤）："><a href="#计算步骤（并不是代码，简单表明一下计算步骤）：" class="headerlink" title="计算步骤（并不是代码，简单表明一下计算步骤）："></a>计算步骤（并不是代码，简单表明一下计算步骤）：</h3><ul>
