@@ -81,8 +81,7 @@ function activateLightMode(){
 <h2 id="特征值分解："><a href="#特征值分解：" class="headerlink" title="特征值分解："></a>特征值分解：</h2><h3 id="推导："><a href="#推导：" class="headerlink" title="推导："></a>推导：</h3><blockquote>
 <p>PCA是要求降维后的数据$Y$的方差最大，并且基向量之间正交。</p>
 <p>数据的方差计算公式：</p>
-<script type="math/tex; mode=display">\frac{1}{n - 1}\sum\limits_{i = 1}^n (U_i^T{X_i} - U_i^T\mu)^2  = \frac{1}{n - 1}\sum\limits_{i = 1}^n {U_i^T \cdot X'X{'^T} \cdot {U_i}}</script><p>$\frac{1}{n - 1}$</p>
-<p>其中的$S = X’{X’}^T$就是为$X’$的协方差矩阵，而$\mu$表示样本的平均值。</p>
+<script type="math/tex; mode=display">\frac{1}{n - 1}\sum\limits_{i = 1}^n (U_i^T{X_i} - U_i^T\mu)^2  = \frac{1}{n - 1}\sum\limits_{i = 1}^n {U_i^T \cdot X'X{'^T} \cdot {U_i}}</script><p>其中的$S = X’{X’}^T$就是为$X’$的协方差矩阵，而$\mu$表示样本的平均值。</p>
 <p>注意其中$U$是正交矩阵，也就是<script type="math/tex">{U^T}U = I</script>，并且协方差矩阵的特征值和特征向量满足：</p>
 <p><script type="math/tex">S{U_i} = \lambda {U_i}</script>，也就是$U_i^TS{U_i}{\text{ = }}\lambda_i $，代入上面式子，方差计算最后的结果就是<script type="math/tex">\frac{1}NaN\sum\limits_{i = 1}^n {\lambda_i}</script>。</p>
 <p>所以，选择特征值越大的特征向量，越能代表数据的原始特征。</p>
